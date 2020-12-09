@@ -18,14 +18,14 @@ public class Test5Main {
 		};
 		int depth = 0;
 		boolean change = true;
-		int[][] changedPond = null;
+		int[][] changedFond = null;
 		while(change) {
 			change = false; //초기Boolean=false
-			changedPond = new int[pond.length][pond.length]; //재배치할 배열 생성
+			changedFond = new int[pond.length][pond.length]; //재배치할 배열 생성
 			for(int i=0; i<pond.length; i++) {
 				
 				for(int j=0; j<pond[i].length; j++) {
-					changedPond[i][j] = pond[i][j];	//배열복사
+					changedFond[i][j] = pond[i][j];	//배열복사
 					if(pond[i][j]!=0) { //연못일때
 						
 						int point = pond[i][j];
@@ -41,17 +41,17 @@ public class Test5Main {
 					}
 				}
 			}
-			for(int i=0; i<pond.length; i++) {
-				for(int j=0; j<pond.length; j++) {
-					pond[i][j] = changedPond[i][j]; //비교배열 재초기화
+			for(int i=0; i<fond.length; i++) {
+				for(int j=0; j<fond.length; j++) {
+					fond[i][j] = changedFond[i][j]; //비교배열 재초기화
 				}
 			}
 		}
 		
-		for(int i=0; i<changedPond.length; i++) { //최종 연못 출력
-			for(int j=0; j<changedPond.length; j++) {
-				System.out.print(pond[i][j] + " ");
-				depth+=pond[i][j];
+		for(int i=0; i<changedFond.length; i++) { //최종 연못 출력
+			for(int j=0; j<changedFond.length; j++) {
+				System.out.print(fond[i][j] + " ");
+				depth+=fond[i][j];
 			}
 			System.out.println();
 		}

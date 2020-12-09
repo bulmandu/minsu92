@@ -48,10 +48,10 @@ public class Test5Main {
 			}
 		}
 		
-		for(int i=0; i<changedPond.length; i++) { //최종 연못 출력
-			for(int j=0; j<changedPond.length; j++) {
-				System.out.print(pond[i][j] + " ");
-				depth+=pond[i][j];
+		for(int i=0; i<changedFond.length; i++) { //최종 연못 출력
+			for(int j=0; j<changedFond.length; j++) {
+				System.out.print(fond[i][j] + " ");
+				depth+=fond[i][j];
 			}
 			System.out.println();
 		}

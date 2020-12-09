@@ -1,0 +1,12 @@
+package test1.bread.factory;
+
+public class BreadMain {
+
+	public static void main(String[] args) {
+		
+		Factory factory = new RealFactory();
+		
+		Bread bread;
+	}
+
+}

@@ -1,0 +1,13 @@
+package test2;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+		int result = 0;
+		Calculator cal = new Calculator();
+		
+		result = cal.add(4).add(5).subtract(3);
+		System.out.println(result);
+	}
+
+}

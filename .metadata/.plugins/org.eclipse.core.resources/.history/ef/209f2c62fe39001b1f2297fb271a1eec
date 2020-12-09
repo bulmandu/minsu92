@@ -1,0 +1,11 @@
+package test3;
+
+public class Factorial {
+	int number = 0;
+	public Factorial(int number) {
+		this.number = number;
+	}
+	public calculate() {
+		
+	}
+}

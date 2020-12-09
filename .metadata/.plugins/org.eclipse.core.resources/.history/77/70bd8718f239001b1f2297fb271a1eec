@@ -1,0 +1,41 @@
+package test1.bread.product;
+
+public class CreamBread extends Bread {
+	String flour;
+	String water;
+	String cream;
+	public CreamBread(String breadType) {
+		this.breadType = breadType;
+	}
+	
+	public String getFlour() {
+		return flour;
+	}
+
+	public void setFlour(String flour) {
+		this.flour = flour;
+	}
+
+	public String getWater() {
+		return water;
+	}
+
+	public void setWater(String water) {
+		this.water = water;
+	}
+
+	public String getCream() {
+		return cream;
+	}
+
+	public void setCream(String cream) {
+		this.cream = cream;
+	}
+
+	@Override
+	public void useBread() {
+		
+
+	}
+
+}

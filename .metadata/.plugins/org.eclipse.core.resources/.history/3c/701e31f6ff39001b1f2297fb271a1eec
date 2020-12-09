@@ -1,0 +1,16 @@
+package test3;
+
+public class FactorialMain {
+
+	public static void main(String[] args) {
+		Factorial factorial = new Factorial();
+		try {
+			int result = factorial.calculate(1000000);
+		}catch(Exception e) {
+			System.out.println("StackOverflowError");
+		}
+		
+		System.out.println(result);
+	}
+
+}

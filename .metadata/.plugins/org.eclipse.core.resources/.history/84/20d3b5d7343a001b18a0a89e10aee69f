@@ -1,0 +1,57 @@
+package test5;
+
+import java.util.Iterator;
+
+public class Test5Main {
+
+	public static void main(String[] args) {
+		int[][] fond = {
+				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+				{0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+				{0, 0, 0, 1, 1, 1, 0, 0, 0, 0},
+				{0, 1, 1, 1, 1, 1, 1, 0, 0, 0},
+				{0, 1, 1, 1, 1, 1, 1, 1, 0, 0},
+				{0, 1, 1, 1, 1, 1, 1, 1, 0, 0},
+				{0, 0, 1, 1, 1, 1, 1, 1, 0, 0},
+				{0, 0, 0, 1, 1, 1, 1, 0, 0, 0},
+				{0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+		};
+		boolean change = true;
+		while(change) {
+			for(int i=0; i<fond.length; i++) {
+				
+				for(int j=0; j<fond[i].length; j++) {
+					
+					int point = fond[i][j];
+					
+					if(i!=0 && j!=0 && i!=fond.length-1 && j!=fond.length-1 ) {
+						int left = fond[i][j-1];
+						int right = fond[i][j+1];
+						int top = fond[i-1][j];
+						int bottom = fond[i+1][j];
+						if(left>=point && right>=point && top>=point && bottom>=point) {
+							
+						}
+						
+						fond[i][j-1] +=1; //left
+						fond[i][j+1] +=1; //right
+						fond[i-1][j] +=1; //top
+						fond[i+1][j] +=1; //bottom
+						
+						
+					}
+				
+
+
+				}
+
+			}
+		}
+
+	}
+
+
+
+
+}

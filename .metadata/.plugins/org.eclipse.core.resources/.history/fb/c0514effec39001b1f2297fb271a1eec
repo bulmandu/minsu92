@@ -1,0 +1,5 @@
+package test1.bread.factory;
+
+public abstract class Bread {
+
+}

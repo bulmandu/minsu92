@@ -1,0 +1,19 @@
+package test3;
+
+public class Factorial {
+	
+	public int calculate(int number) {
+		int result = 0;
+		
+		if(number==1) {
+			return 1;
+		}
+		try {
+			result = number * calculate(number-1);
+		}catch(Exception e) {
+			System.out.println("StackOverflowError");
+			e.getMessage();
+		}
+		return result;
+	}
+}

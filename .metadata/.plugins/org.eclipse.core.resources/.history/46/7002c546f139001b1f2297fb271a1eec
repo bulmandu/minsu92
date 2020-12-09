@@ -1,0 +1,13 @@
+package test1.bread.product;
+
+public class ButterBread extends Bread {
+	String flour;
+	String water;
+	String butter;
+	@Override
+	public void useBread() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

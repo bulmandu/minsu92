@@ -1,0 +1,40 @@
+package test1.bread.product;
+
+public class ButterBread extends Bread {
+	String flour;
+	String water;
+	String butter;
+	public ButterBread(String breadType) {
+		this breadType = breadType;
+	}
+	public String getFlour() {
+		return flour;
+	}
+
+	public void setFlour(String flour) {
+		this.flour = flour;
+	}
+
+	public String getWater() {
+		return water;
+	}
+
+	public void setWater(String water) {
+		this.water = water;
+	}
+
+	public String getButter() {
+		return butter;
+	}
+
+	public void setButter(String butter) {
+		this.butter = butter;
+	}
+
+	@Override
+	public void useBread() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

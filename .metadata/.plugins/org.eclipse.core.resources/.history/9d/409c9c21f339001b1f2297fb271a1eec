@@ -1,0 +1,16 @@
+package test1.bread.factory;
+
+import test1.bread.product.Bread;
+
+public class RealFactory extends Factory {
+
+	@Override
+	public Bread Create(String bread) {
+		if(bread.equals("butter")) {
+			return new ButterBread("butter");
+		}
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+package test1.bread.factory;
+
+import test1.bread.product.Bread;
+
+public class BreadMain {
+
+	public static void main(String[] args) {
+		
+		Factory factory = new RealFactory();
+		
+		Bread bread;
+		Bread butterBread = factory.create("butter");
+		bread = 
+	}
+
+}

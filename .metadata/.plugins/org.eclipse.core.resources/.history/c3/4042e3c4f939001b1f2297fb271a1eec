@@ -1,0 +1,8 @@
+package test2;
+
+public class Calculator {
+	int result=0;
+	public int add(int num) {
+		
+	}
+}

@@ -1,0 +1,29 @@
+package test1.bread.product;
+
+public class SugarBread extends Bread {
+	int flour;
+	int water;
+	int sugar;
+	public SugarBread(String breadType) {
+		this.breadType = breadType;
+	}
+	
+	public void setFlour(int flour) {
+		this.flour = flour;
+	}
+
+	public void setWater(int water) {
+		this.water = water;
+	}
+
+	public void setCream(int cream) {
+		this.cream = cream;
+	}
+
+	@Override
+	public void useBread() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

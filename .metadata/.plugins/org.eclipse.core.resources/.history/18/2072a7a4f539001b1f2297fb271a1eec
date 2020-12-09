@@ -1,0 +1,18 @@
+package test1.bread.factory;
+
+import test1.bread.product.*;
+
+public class BreadMain {
+
+	public static void main(String[] args) {
+		
+		Factory factory = new RealFactory();
+		ArrayList<Bread> list = new ArrayList<Bread>();
+		Bread butterBread = factory.create("butter");
+		
+		Bread CreamBread = factory.create("cream");
+		Bread SugarBread = factory.create("sugar");
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package test1.bread.product;
+
+public class CreamBread extends Bread {
+	String flour;
+	String water;
+	String cream;
+	public ButterBread(String breadType) {
+		this.breadType = breadType;
+	}
+	@Override
+	public void useBread() {
+		
+
+	}
+
+}
